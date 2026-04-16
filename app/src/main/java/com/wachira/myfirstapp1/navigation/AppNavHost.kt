@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.calcintent.Calc
 import com.example.calcintent.Intent
+import com.wachira.myfirstapp1.ui.theme.screens.cards_boxes.Caoxscreen
 import com.wachira.myfirstapp1.ui.theme.screens.home.HomeScreen
 import com.wachira.myfirstapp1.ui.theme.screens.login.Loginscreen
 import com.wachira.myfirstapp1.ui.theme.screens.register.RegisterScreen
@@ -38,5 +39,10 @@ fun AppNavHost(
         composable(ROUTE_CALCULATOR) {
             Calc()
         }
+        composable(ROUTE_CAOX) {
+            Caoxscreen()
+        }
+
+
     }
 }

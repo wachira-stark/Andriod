@@ -48,7 +48,7 @@ fun HomeScreen(navController: NavController) {
             .padding(3.dp)
     ) {
 //        start of topappbar
-        TopAppBar(title = {Text("Home Section ",
+        TopAppBar(title = {Text("Home Page",
             fontFamily = FontFamily.Cursive,
             fontSize = 35.sp)},
             navigationIcon = {
