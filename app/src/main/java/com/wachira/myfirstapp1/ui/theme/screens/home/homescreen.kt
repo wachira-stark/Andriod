@@ -83,7 +83,9 @@ fun HomeScreen(navController: NavController) {
         )
         Image(painter = painterResource(id = R.drawable.wachira),
             contentDescription = "Ajira",
-            modifier = Modifier.width(300.dp)
+            modifier = Modifier
+                .width(300.dp)
+                .height(300.dp)
         )
         Button(onClick = { navController.navigate(ROUTE_REGISTER) },
             colors = ButtonDefaults.buttonColors(Color.Black),

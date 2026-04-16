@@ -12,12 +12,13 @@ import com.wachira.myfirstapp1.ui.theme.screens.cards_boxes.Caoxscreen
 import com.wachira.myfirstapp1.ui.theme.screens.home.HomeScreen
 import com.wachira.myfirstapp1.ui.theme.screens.login.Loginscreen
 import com.wachira.myfirstapp1.ui.theme.screens.register.RegisterScreen
+import com.wachira.myfirstapp1.ui.theme.screens.splash.SplashScreen
 
 @Composable
 fun AppNavHost(
     modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController(),
-    startDestination: String = ROUTE_HOME
+    startDestination: String = ROUTE_SPLASH
 ) {
     NavHost(
         navController = navController,
@@ -41,6 +42,9 @@ fun AppNavHost(
         }
         composable(ROUTE_CAOX) {
             Caoxscreen()
+        }
+        composable(ROUTE_SPLASH) {
+            SplashScreen(navController)
         }
 
 
